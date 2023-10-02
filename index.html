@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    #card{
+      width:19rem;
+      max-height:29rem;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    #img{
+      width:19rem;
+      height:15rem;
+    }
+    button{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    nav{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #logo{
+     font-size:xx-large;
+     margin-right:10px;
+     margin-top:-4px;
+    }
+  </style>
+</head>
+<body class="bg-blue-500">
+	<nav class="bg-white duration-300 m-3 rounded-sm p-3">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <a href="#">
+              <h1 class="text-blue-500 font-bold " id="logo">SVREC</h1>
+            </a>
+          
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4 ">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium duration-500">Team</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium duration-500">Projects</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium duration-500">Contact</a>
+            </div>
+          </div>
+        </div>
+        
+  
+          <!-- Profile dropdown -->
+         
+  
+            <!--
+              Dropdown menu, show/hide based on menu state.
+  
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Teams</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- nav bar ending-->
+
+    <h1 class=" text-center text-3xl text-gray-600 font-bold mt-3 bg-white p-4 ml-3 mr-3 rounded-lg shrink">
+      Welcome to Project Work done by the SVREC students
+    </h1>
+
+    <div class="whole flex flex-wrap justify-center">
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://rerafiling.com/upload/articles/pages_1720978779.jpg" alt="" class="rounded-lg" id="img">
+      </div>
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Online complaint Portal:</h3>
+        The Online Fee Payment Portal project is a web-based application designed to streamline and simplify
+         the process of paying fees for educational institutions, businesses, or service providers.
+
+
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://i.pinimg.com/originals/ae/bd/a5/aebda5a3ba478eda1324412ff14b38f1.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Hostel Management portal:</h3>
+        The Hostel Management Web App is a user-friendly, efficient platform designed to streamline the operations of hostels and provide a seamless experience for both hostel administrators 
+        and residents.
+
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/69/88/travelling-tourism-poster-design-in-book-vector-26376988.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Travel and Tourism portal:</h3>
+        This app empowers tourists to effortlessly plan their journeys, browse and book accommodations, activities, and tours, 
+        all within a single, user-friendly interface. 
+
+
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://projectabstracts.com/wp-content/uploads/2019/12/projectjpg.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h1 class="font-bold">Student database management:</h1>
+        Student database management system helps schools, colleges, and universities maintain accurate records of their students,
+         streamline administrative processes,
+         and enhance communication.
+
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://camudigitalcampus.com/wp-content/uploads/2022/01/What-is-Placement-Management-software-1.png" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Placement portal:</h3>
+        Placement Management Portal Web App is a powerful tool for educational institutions aiming to bridge the gap between 
+        students and job opportunities. 
+        
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://editor.analyticsvidhya.com/uploads/66982lms.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Library Management Portal:</h3>
+        A Library Management Web App is designed to streamline the management of library resources, 
+        making it easier for librarians and patrons to access and manage books, and other materials.
+
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://5.imimg.com/data5/UJ/XU/RF/SELLER-25744477/blood-bank-management-system.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Blood bank management system:</h3>
+        A Blood Bank Management web application is vital for supply of blood and blood products within 
+        a healthcare system. This web app serves as hub of tracking, and managing blood donations.
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-2 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/51/23/online-doctor-appointment-system-flat-banner-vector-45295123.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Online Docter appointment</h3>
+        This platform making it easier than ever to schedule appointments and receive medical advice.
+         With just a few clicks, patients can browse through a list of available doctors,and confirm their appointment
+        
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-0 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://www.biz4solutions.com/blog/wp-content/uploads/2021/11/banner.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Invetory Management System:</h3>
+        This innovative platform streamlines the process of tracking and managing inventory,
+        providing companies with real-time visibility into their stock levels, order history,product availability. 
+        
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-0 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+      <!-- card-1 -->
+      <div class="card flex flex-row flex-wrap bg-white m-3 inline-block p-3 rounded-lg shrink hover:translate-y-3 duration-300" id="card">
+      <div class="img">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/51/23/online-doctor-appointment-system-flat-banner-vector-45295123.jpg" alt="" class="rounded-lg"id="img">
+      </div>
+      
+      <div class="content text-l text-gray-800 text-justify mt-2 p-1 focus:bg-blue-500 font-semibold text-sm">
+        <h3 class="font-bold">Online Docter appointment</h3>
+        This platform making it easier than ever to schedule appointments and receive medical advice.
+         With just a few clicks, patients can browse through a list of available doctors,and confirm their appointment
+        
+      </div>
+      <button type="submit" class="bg-blue-500 p-3 mt-0 rounded-lg font-semibold text-white text-lg hover:bg-red-700 duration-300">
+        Enter the website
+      </button>
+    </div>
+    <!-- card-1 ending -->
+    </div>
+    
+
+
+
+
+</body>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
+</script>
+</html>
